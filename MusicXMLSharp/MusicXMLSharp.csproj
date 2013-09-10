@@ -40,8 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MusicXMLSchema.cs" />
+    <Compile Include="Schema\MusicXMLSchema.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schema\Opus.cs" />
+    <Compile Include="Schema\OpusShow.cs" />
+    <Compile Include="Schema\OpusType.cs" />
+    <Compile Include="Schema\ScorePartwise.cs" />
+    <Compile Include="Schema\Work.cs" />
     <Compile Include="Score.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
