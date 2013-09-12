@@ -5,19 +5,19 @@
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 public partial class Print {
     
-    private pagelayout pagelayoutField;
+    private PageLayout _pageLayoutField;
     
-    private systemlayout systemlayoutField;
+    private SystemLayout _systemLayoutField;
     
-    private stafflayout[] stafflayoutField;
+    private StaffLayout[] _staffLayoutField;
     
     private MeasureLayout _measureLayoutField;
     
     private MeasureNumbering _measureNumberingField;
     
-    private namedisplay partnamedisplayField;
+    private NameDisplay partnamedisplayField;
     
-    private namedisplay partabbreviationdisplayField;
+    private NameDisplay partabbreviationdisplayField;
     
     private decimal staffspacingField;
     
@@ -37,34 +37,34 @@ public partial class Print {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("page-layout")]
-    public pagelayout pagelayout {
+    public PageLayout PageLayout {
         get {
-            return this.pagelayoutField;
+            return this._pageLayoutField;
         }
         set {
-            this.pagelayoutField = value;
+            this._pageLayoutField = value;
         }
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("system-layout")]
-    public systemlayout systemlayout {
+    public SystemLayout SystemLayout {
         get {
-            return this.systemlayoutField;
+            return this._systemLayoutField;
         }
         set {
-            this.systemlayoutField = value;
+            this._systemLayoutField = value;
         }
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("staff-layout")]
-    public stafflayout[] stafflayout {
+    public StaffLayout[] StaffLayout {
         get {
-            return this.stafflayoutField;
+            return this._staffLayoutField;
         }
         set {
-            this.stafflayoutField = value;
+            this._staffLayoutField = value;
         }
     }
     
@@ -92,7 +92,7 @@ public partial class Print {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("part-name-display")]
-    public namedisplay partnamedisplay {
+    public NameDisplay partnamedisplay {
         get {
             return this.partnamedisplayField;
         }
@@ -103,7 +103,7 @@ public partial class Print {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("part-abbreviation-display")]
-    public namedisplay partabbreviationdisplay {
+    public NameDisplay partabbreviationdisplay {
         get {
             return this.partabbreviationdisplayField;
         }

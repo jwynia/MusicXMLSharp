@@ -19,3626 +19,9 @@ using MusicXMLSharp.Schema;
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="measure-numbering-value")]
-public enum MeasureNumberingValue {
-    
-    /// <remarks/>
-    none,
-    
-    /// <remarks/>
-    measure,
-    
-    /// <remarks/>
-    system,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="measure-layout")]
-public partial class measurelayout {
-    
-    private decimal measuredistanceField;
-    
-    private bool measuredistanceFieldSpecified;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("measure-distance")]
-    public decimal measuredistance {
-        get {
-            return this.measuredistanceField;
-        }
-        set {
-            this.measuredistanceField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool measuredistanceSpecified {
-        get {
-            return this.measuredistanceFieldSpecified;
-        }
-        set {
-            this.measuredistanceFieldSpecified = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class print {
-    
-    private pagelayout pagelayoutField;
-    
-    private systemlayout systemlayoutField;
-    
-    private stafflayout[] stafflayoutField;
-    
-    private measurelayout measurelayoutField;
-    
-    private MeasureNumbering _measureNumberingField;
-    
-    private namedisplay partnamedisplayField;
-    
-    private namedisplay partabbreviationdisplayField;
-    
-    private decimal staffspacingField;
-    
-    private bool staffspacingFieldSpecified;
-    
-    private YesNo newsystemField;
-    
-    private bool newsystemFieldSpecified;
-    
-    private YesNo newpageField;
-    
-    private bool newpageFieldSpecified;
-    
-    private string blankpageField;
-    
-    private string pagenumberField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("page-layout")]
-    public pagelayout pagelayout {
-        get {
-            return this.pagelayoutField;
-        }
-        set {
-            this.pagelayoutField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("system-layout")]
-    public systemlayout systemlayout {
-        get {
-            return this.systemlayoutField;
-        }
-        set {
-            this.systemlayoutField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("staff-layout")]
-    public stafflayout[] stafflayout {
-        get {
-            return this.stafflayoutField;
-        }
-        set {
-            this.stafflayoutField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("measure-layout")]
-    public measurelayout measurelayout {
-        get {
-            return this.measurelayoutField;
-        }
-        set {
-            this.measurelayoutField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("measure-numbering")]
-    public MeasureNumbering MeasureNumbering {
-        get {
-            return this._measureNumberingField;
-        }
-        set {
-            this._measureNumberingField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("part-name-display")]
-    public namedisplay partnamedisplay {
-        get {
-            return this.partnamedisplayField;
-        }
-        set {
-            this.partnamedisplayField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("part-abbreviation-display")]
-    public namedisplay partabbreviationdisplay {
-        get {
-            return this.partabbreviationdisplayField;
-        }
-        set {
-            this.partabbreviationdisplayField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("staff-spacing")]
-    public decimal staffspacing {
-        get {
-            return this.staffspacingField;
-        }
-        set {
-            this.staffspacingField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool staffspacingSpecified {
-        get {
-            return this.staffspacingFieldSpecified;
-        }
-        set {
-            this.staffspacingFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("new-system")]
-    public YesNo newsystem {
-        get {
-            return this.newsystemField;
-        }
-        set {
-            this.newsystemField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool newsystemSpecified {
-        get {
-            return this.newsystemFieldSpecified;
-        }
-        set {
-            this.newsystemFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("new-page")]
-    public YesNo newpage {
-        get {
-            return this.newpageField;
-        }
-        set {
-            this.newpageField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool newpageSpecified {
-        get {
-            return this.newpageFieldSpecified;
-        }
-        set {
-            this.newpageFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("blank-page", DataType="positiveInteger")]
-    public string blankpage {
-        get {
-            return this.blankpageField;
-        }
-        set {
-            this.blankpageField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("page-number", DataType="token")]
-    public string pagenumber {
-        get {
-            return this.pagenumberField;
-        }
-        set {
-            this.pagenumberField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="page-layout")]
-public partial class pagelayout {
-    
-    private decimal pageheightField;
-    
-    private decimal pagewidthField;
-    
-    private pagemargins[] pagemarginsField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("page-height")]
-    public decimal pageheight {
-        get {
-            return this.pageheightField;
-        }
-        set {
-            this.pageheightField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("page-width")]
-    public decimal pagewidth {
-        get {
-            return this.pagewidthField;
-        }
-        set {
-            this.pagewidthField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("page-margins")]
-    public pagemargins[] pagemargins {
-        get {
-            return this.pagemarginsField;
-        }
-        set {
-            this.pagemarginsField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="page-margins")]
-public partial class pagemargins {
-    
-    private decimal leftmarginField;
-    
-    private decimal rightmarginField;
-    
-    private decimal topmarginField;
-    
-    private decimal bottommarginField;
-    
-    private margintype typeField;
-    
-    private bool typeFieldSpecified;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("left-margin")]
-    public decimal leftmargin {
-        get {
-            return this.leftmarginField;
-        }
-        set {
-            this.leftmarginField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("right-margin")]
-    public decimal rightmargin {
-        get {
-            return this.rightmarginField;
-        }
-        set {
-            this.rightmarginField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("top-margin")]
-    public decimal topmargin {
-        get {
-            return this.topmarginField;
-        }
-        set {
-            this.topmarginField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("bottom-margin")]
-    public decimal bottommargin {
-        get {
-            return this.bottommarginField;
-        }
-        set {
-            this.bottommarginField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public margintype type {
-        get {
-            return this.typeField;
-        }
-        set {
-            this.typeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool typeSpecified {
-        get {
-            return this.typeFieldSpecified;
-        }
-        set {
-            this.typeFieldSpecified = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="margin-type")]
-public enum margintype {
-    
-    /// <remarks/>
-    odd,
-    
-    /// <remarks/>
-    even,
-    
-    /// <remarks/>
-    both,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="system-layout")]
-public partial class systemlayout {
-    
-    private systemmargins systemmarginsField;
-    
-    private decimal systemdistanceField;
-    
-    private bool systemdistanceFieldSpecified;
-    
-    private decimal topsystemdistanceField;
-    
-    private bool topsystemdistanceFieldSpecified;
-    
-    private systemdividers systemdividersField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("system-margins")]
-    public systemmargins systemmargins {
-        get {
-            return this.systemmarginsField;
-        }
-        set {
-            this.systemmarginsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("system-distance")]
-    public decimal systemdistance {
-        get {
-            return this.systemdistanceField;
-        }
-        set {
-            this.systemdistanceField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool systemdistanceSpecified {
-        get {
-            return this.systemdistanceFieldSpecified;
-        }
-        set {
-            this.systemdistanceFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("top-system-distance")]
-    public decimal topsystemdistance {
-        get {
-            return this.topsystemdistanceField;
-        }
-        set {
-            this.topsystemdistanceField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool topsystemdistanceSpecified {
-        get {
-            return this.topsystemdistanceFieldSpecified;
-        }
-        set {
-            this.topsystemdistanceFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("system-dividers")]
-    public systemdividers systemdividers {
-        get {
-            return this.systemdividersField;
-        }
-        set {
-            this.systemdividersField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="system-margins")]
-public partial class systemmargins {
-    
-    private decimal leftmarginField;
-    
-    private decimal rightmarginField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("left-margin")]
-    public decimal leftmargin {
-        get {
-            return this.leftmarginField;
-        }
-        set {
-            this.leftmarginField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("right-margin")]
-    public decimal rightmargin {
-        get {
-            return this.rightmarginField;
-        }
-        set {
-            this.rightmarginField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="system-dividers")]
-public partial class systemdividers {
-    
-    private emptyprintobjectstylealign leftdividerField;
-    
-    private emptyprintobjectstylealign rightdividerField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("left-divider")]
-    public emptyprintobjectstylealign leftdivider {
-        get {
-            return this.leftdividerField;
-        }
-        set {
-            this.leftdividerField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("right-divider")]
-    public emptyprintobjectstylealign rightdivider {
-        get {
-            return this.rightdividerField;
-        }
-        set {
-            this.rightdividerField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="empty-print-object-style-align")]
-public partial class emptyprintobjectstylealign {
-    
-    private YesNo printobjectField;
-    
-    private bool printobjectFieldSpecified;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("print-object")]
-    public YesNo printobject {
-        get {
-            return this.printobjectField;
-        }
-        set {
-            this.printobjectField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool printobjectSpecified {
-        get {
-            return this.printobjectFieldSpecified;
-        }
-        set {
-            this.printobjectFieldSpecified = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="staff-layout")]
-public partial class stafflayout {
-    
-    private decimal staffdistanceField;
-    
-    private bool staffdistanceFieldSpecified;
-    
-    private string numberField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("staff-distance")]
-    public decimal staffdistance {
-        get {
-            return this.staffdistanceField;
-        }
-        set {
-            this.staffdistanceField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool staffdistanceSpecified {
-        get {
-            return this.staffdistanceFieldSpecified;
-        }
-        set {
-            this.staffdistanceFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
-    public string number {
-        get {
-            return this.numberField;
-        }
-        set {
-            this.numberField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="name-display")]
-public partial class namedisplay {
-    
-    private object[] itemsField;
-    
-    private YesNo printobjectField;
-    
-    private bool printobjectFieldSpecified;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("accidental-text", typeof(accidentaltext))]
-    [System.Xml.Serialization.XmlElementAttribute("display-text", typeof(FormattedText))]
-    public object[] Items {
-        get {
-            return this.itemsField;
-        }
-        set {
-            this.itemsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("print-object")]
-    public YesNo printobject {
-        get {
-            return this.printobjectField;
-        }
-        set {
-            this.printobjectField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool printobjectSpecified {
-        get {
-            return this.printobjectFieldSpecified;
-        }
-        set {
-            this.printobjectFieldSpecified = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="accidental-text")]
-public partial class accidentaltext {
-    
-    private string langField;
-    
-    private string spaceField;
-    
-    private accidentalvalue valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(Form=System.Xml.Schema.XmlSchemaForm.Qualified, Namespace="http://www.w3.org/XML/1998/namespace")]
-    public string lang {
-        get {
-            return this.langField;
-        }
-        set {
-            this.langField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(Form=System.Xml.Schema.XmlSchemaForm.Qualified, Namespace="http://www.w3.org/XML/1998/namespace")]
-    public string space {
-        get {
-            return this.spaceField;
-        }
-        set {
-            this.spaceField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public accidentalvalue Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="accidental-value")]
-public enum accidentalvalue {
-    
-    /// <remarks/>
-    sharp,
-    
-    /// <remarks/>
-    natural,
-    
-    /// <remarks/>
-    flat,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("double-sharp")]
-    doublesharp,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("sharp-sharp")]
-    sharpsharp,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("flat-flat")]
-    flatflat,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("natural-sharp")]
-    naturalsharp,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("natural-flat")]
-    naturalflat,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("quarter-flat")]
-    quarterflat,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("quarter-sharp")]
-    quartersharp,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("three-quarters-flat")]
-    threequartersflat,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("three-quarters-sharp")]
-    threequarterssharp,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("sharp-down")]
-    sharpdown,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("sharp-up")]
-    sharpup,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("natural-down")]
-    naturaldown,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("natural-up")]
-    naturalup,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("flat-down")]
-    flatdown,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("flat-up")]
-    flatup,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("triple-sharp")]
-    triplesharp,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("triple-flat")]
-    tripleflat,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("slash-quarter-sharp")]
-    slashquartersharp,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("slash-sharp")]
-    slashsharp,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("slash-flat")]
-    slashflat,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("double-slash-flat")]
-    doubleslashflat,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("sharp-1")]
-    sharp1,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("sharp-2")]
-    sharp2,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("sharp-3")]
-    sharp3,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("sharp-5")]
-    sharp5,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("flat-1")]
-    flat1,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("flat-2")]
-    flat2,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("flat-3")]
-    flat3,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("flat-4")]
-    flat4,
-    
-    /// <remarks/>
-    sori,
-    
-    /// <remarks/>
-    koron,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class figure {
-    
-    private styletext prefixField;
-    
-    private styletext figurenumberField;
-    
-    private styletext suffixField;
-    
-    private extend extendField;
-    
-    /// <remarks/>
-    public styletext prefix {
-        get {
-            return this.prefixField;
-        }
-        set {
-            this.prefixField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("figure-number")]
-    public styletext figurenumber {
-        get {
-            return this.figurenumberField;
-        }
-        set {
-            this.figurenumberField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public styletext suffix {
-        get {
-            return this.suffixField;
-        }
-        set {
-            this.suffixField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public extend extend {
-        get {
-            return this.extendField;
-        }
-        set {
-            this.extendField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="style-text")]
-public partial class styletext {
-    
-    private string valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public string Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class extend {
-    
-    private StartStopContinue typeField;
-    
-    private bool typeFieldSpecified;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public StartStopContinue type {
-        get {
-            return this.typeField;
-        }
-        set {
-            this.typeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool typeSpecified {
-        get {
-            return this.typeFieldSpecified;
-        }
-        set {
-            this.typeFieldSpecified = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="figured-bass")]
-public partial class figuredbass {
-    
-    private figure[] figureField;
-    
-    private decimal durationField;
-    
-    private FormattedText footnoteField;
-    
-    private Level levelField;
-    
-    private YesNo printdotField;
-    
-    private bool printdotFieldSpecified;
-    
-    private YesNo printlyricField;
-    
-    private bool printlyricFieldSpecified;
-    
-    private YesNo parenthesesField;
-    
-    private bool parenthesesFieldSpecified;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("figure")]
-    public figure[] figure {
-        get {
-            return this.figureField;
-        }
-        set {
-            this.figureField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public decimal duration {
-        get {
-            return this.durationField;
-        }
-        set {
-            this.durationField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public FormattedText footnote {
-        get {
-            return this.footnoteField;
-        }
-        set {
-            this.footnoteField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public Level level {
-        get {
-            return this.levelField;
-        }
-        set {
-            this.levelField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("print-dot")]
-    public YesNo printdot {
-        get {
-            return this.printdotField;
-        }
-        set {
-            this.printdotField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool printdotSpecified {
-        get {
-            return this.printdotFieldSpecified;
-        }
-        set {
-            this.printdotFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("print-lyric")]
-    public YesNo printlyric {
-        get {
-            return this.printlyricField;
-        }
-        set {
-            this.printlyricField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool printlyricSpecified {
-        get {
-            return this.printlyricFieldSpecified;
-        }
-        set {
-            this.printlyricFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public YesNo parentheses {
-        get {
-            return this.parenthesesField;
-        }
-        set {
-            this.parenthesesField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool parenthesesSpecified {
-        get {
-            return this.parenthesesFieldSpecified;
-        }
-        set {
-            this.parenthesesFieldSpecified = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class barre {
-    
-    private startstop typeField;
-    
-    private string colorField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
-        get {
-            return this.typeField;
-        }
-        set {
-            this.typeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string color {
-        get {
-            return this.colorField;
-        }
-        set {
-            this.colorField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="start-stop")]
-public enum startstop {
-    
-    /// <remarks/>
-    start,
-    
-    /// <remarks/>
-    stop,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="frame-note")]
-public partial class framenote {
-    
-    private @string stringField;
-    
-    private fret fretField;
-    
-    private fingering fingeringField;
-    
-    private barre barreField;
-    
-    /// <remarks/>
-    public @string @string {
-        get {
-            return this.stringField;
-        }
-        set {
-            this.stringField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public fret fret {
-        get {
-            return this.fretField;
-        }
-        set {
-            this.fretField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public fingering fingering {
-        get {
-            return this.fingeringField;
-        }
-        set {
-            this.fingeringField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public barre barre {
-        get {
-            return this.barreField;
-        }
-        set {
-            this.barreField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class @string {
-    
-    private AboveBelow placementField;
-    
-    private bool placementFieldSpecified;
-    
-    private string valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public AboveBelow placement {
-        get {
-            return this.placementField;
-        }
-        set {
-            this.placementField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool placementSpecified {
-        get {
-            return this.placementFieldSpecified;
-        }
-        set {
-            this.placementFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute(DataType="positiveInteger")]
-    public string Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class fret {
-    
-    private string fontfamilyField;
-    
-    private fontstyle fontstyleField;
-    
-    private bool fontstyleFieldSpecified;
-    
-    private string fontsizeField;
-    
-    private fontweight fontweightField;
-    
-    private bool fontweightFieldSpecified;
-    
-    private string colorField;
-    
-    private string valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("font-family", DataType="token")]
-    public string fontfamily {
-        get {
-            return this.fontfamilyField;
-        }
-        set {
-            this.fontfamilyField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
-        get {
-            return this.fontstyleField;
-        }
-        set {
-            this.fontstyleField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool fontstyleSpecified {
-        get {
-            return this.fontstyleFieldSpecified;
-        }
-        set {
-            this.fontstyleFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("font-size")]
-    public string fontsize {
-        get {
-            return this.fontsizeField;
-        }
-        set {
-            this.fontsizeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
-        get {
-            return this.fontweightField;
-        }
-        set {
-            this.fontweightField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool fontweightSpecified {
-        get {
-            return this.fontweightFieldSpecified;
-        }
-        set {
-            this.fontweightFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string color {
-        get {
-            return this.colorField;
-        }
-        set {
-            this.colorField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute(DataType="nonNegativeInteger")]
-    public string Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="font-style")]
-public enum fontstyle {
-    
-    /// <remarks/>
-    normal,
-    
-    /// <remarks/>
-    italic,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="font-weight")]
-public enum fontweight {
-    
-    /// <remarks/>
-    normal,
-    
-    /// <remarks/>
-    bold,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class fingering {
-    
-    private YesNo substitutionField;
-    
-    private bool substitutionFieldSpecified;
-    
-    private YesNo alternateField;
-    
-    private bool alternateFieldSpecified;
-    
-    private AboveBelow placementField;
-    
-    private bool placementFieldSpecified;
-    
-    private string valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public YesNo substitution {
-        get {
-            return this.substitutionField;
-        }
-        set {
-            this.substitutionField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool substitutionSpecified {
-        get {
-            return this.substitutionFieldSpecified;
-        }
-        set {
-            this.substitutionFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public YesNo alternate {
-        get {
-            return this.alternateField;
-        }
-        set {
-            this.alternateField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool alternateSpecified {
-        get {
-            return this.alternateFieldSpecified;
-        }
-        set {
-            this.alternateFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public AboveBelow placement {
-        get {
-            return this.placementField;
-        }
-        set {
-            this.placementField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool placementSpecified {
-        get {
-            return this.placementFieldSpecified;
-        }
-        set {
-            this.placementFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public string Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="first-fret")]
-public partial class firstfret {
-    
-    private string textField;
-    
-    private leftright locationField;
-    
-    private bool locationFieldSpecified;
-    
-    private string valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string text {
-        get {
-            return this.textField;
-        }
-        set {
-            this.textField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public leftright location {
-        get {
-            return this.locationField;
-        }
-        set {
-            this.locationField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool locationSpecified {
-        get {
-            return this.locationFieldSpecified;
-        }
-        set {
-            this.locationFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute(DataType="positiveInteger")]
-    public string Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="left-right")]
-public enum leftright {
-    
-    /// <remarks/>
-    left,
-    
-    /// <remarks/>
-    right,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class frame {
-    
-    private string framestringsField;
-    
-    private string framefretsField;
-    
-    private firstfret firstfretField;
-    
-    private framenote[] framenoteField;
-    
-    private decimal defaultxField;
-    
-    private bool defaultxFieldSpecified;
-    
-    private decimal defaultyField;
-    
-    private bool defaultyFieldSpecified;
-    
-    private decimal relativexField;
-    
-    private bool relativexFieldSpecified;
-    
-    private decimal relativeyField;
-    
-    private bool relativeyFieldSpecified;
-    
-    private string colorField;
-    
-    private leftcenterright halignField;
-    
-    private bool halignFieldSpecified;
-    
-    private valignimage valignField;
-    
-    private bool valignFieldSpecified;
-    
-    private decimal heightField;
-    
-    private bool heightFieldSpecified;
-    
-    private decimal widthField;
-    
-    private bool widthFieldSpecified;
-    
-    private string unplayedField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("frame-strings", DataType="positiveInteger")]
-    public string framestrings {
-        get {
-            return this.framestringsField;
-        }
-        set {
-            this.framestringsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("frame-frets", DataType="positiveInteger")]
-    public string framefrets {
-        get {
-            return this.framefretsField;
-        }
-        set {
-            this.framefretsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("first-fret")]
-    public firstfret firstfret {
-        get {
-            return this.firstfretField;
-        }
-        set {
-            this.firstfretField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("frame-note")]
-    public framenote[] framenote {
-        get {
-            return this.framenoteField;
-        }
-        set {
-            this.framenoteField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("default-x")]
-    public decimal defaultx {
-        get {
-            return this.defaultxField;
-        }
-        set {
-            this.defaultxField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool defaultxSpecified {
-        get {
-            return this.defaultxFieldSpecified;
-        }
-        set {
-            this.defaultxFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("default-y")]
-    public decimal defaulty {
-        get {
-            return this.defaultyField;
-        }
-        set {
-            this.defaultyField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool defaultySpecified {
-        get {
-            return this.defaultyFieldSpecified;
-        }
-        set {
-            this.defaultyFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("relative-x")]
-    public decimal relativex {
-        get {
-            return this.relativexField;
-        }
-        set {
-            this.relativexField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool relativexSpecified {
-        get {
-            return this.relativexFieldSpecified;
-        }
-        set {
-            this.relativexFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("relative-y")]
-    public decimal relativey {
-        get {
-            return this.relativeyField;
-        }
-        set {
-            this.relativeyField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool relativeySpecified {
-        get {
-            return this.relativeyFieldSpecified;
-        }
-        set {
-            this.relativeyFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string color {
-        get {
-            return this.colorField;
-        }
-        set {
-            this.colorField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public leftcenterright halign {
-        get {
-            return this.halignField;
-        }
-        set {
-            this.halignField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool halignSpecified {
-        get {
-            return this.halignFieldSpecified;
-        }
-        set {
-            this.halignFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public valignimage valign {
-        get {
-            return this.valignField;
-        }
-        set {
-            this.valignField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool valignSpecified {
-        get {
-            return this.valignFieldSpecified;
-        }
-        set {
-            this.valignFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public decimal height {
-        get {
-            return this.heightField;
-        }
-        set {
-            this.heightField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool heightSpecified {
-        get {
-            return this.heightFieldSpecified;
-        }
-        set {
-            this.heightFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public decimal width {
-        get {
-            return this.widthField;
-        }
-        set {
-            this.widthField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool widthSpecified {
-        get {
-            return this.widthFieldSpecified;
-        }
-        set {
-            this.widthFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string unplayed {
-        get {
-            return this.unplayedField;
-        }
-        set {
-            this.unplayedField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="left-center-right")]
-public enum leftcenterright {
-    
-    /// <remarks/>
-    left,
-    
-    /// <remarks/>
-    center,
-    
-    /// <remarks/>
-    right,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="valign-image")]
-public enum valignimage {
-    
-    /// <remarks/>
-    top,
-    
-    /// <remarks/>
-    middle,
-    
-    /// <remarks/>
-    bottom,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="degree-type")]
-public partial class degreetype {
-    
-    private string textField;
-    
-    private degreetypevalue valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string text {
-        get {
-            return this.textField;
-        }
-        set {
-            this.textField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public degreetypevalue Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="degree-type-value")]
-public enum degreetypevalue {
-    
-    /// <remarks/>
-    add,
-    
-    /// <remarks/>
-    alter,
-    
-    /// <remarks/>
-    subtract,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="degree-alter")]
-public partial class degreealter {
-    
-    private YesNo plusminusField;
-    
-    private bool plusminusFieldSpecified;
-    
-    private decimal valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("plus-minus")]
-    public YesNo plusminus {
-        get {
-            return this.plusminusField;
-        }
-        set {
-            this.plusminusField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool plusminusSpecified {
-        get {
-            return this.plusminusFieldSpecified;
-        }
-        set {
-            this.plusminusFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public decimal Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="degree-value")]
-public partial class degreevalue {
-    
-    private degreesymbolvalue symbolField;
-    
-    private bool symbolFieldSpecified;
-    
-    private string textField;
-    
-    private string valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public degreesymbolvalue symbol {
-        get {
-            return this.symbolField;
-        }
-        set {
-            this.symbolField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool symbolSpecified {
-        get {
-            return this.symbolFieldSpecified;
-        }
-        set {
-            this.symbolFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string text {
-        get {
-            return this.textField;
-        }
-        set {
-            this.textField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute(DataType="positiveInteger")]
-    public string Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="degree-symbol-value")]
-public enum degreesymbolvalue {
-    
-    /// <remarks/>
-    major,
-    
-    /// <remarks/>
-    minor,
-    
-    /// <remarks/>
-    augmented,
-    
-    /// <remarks/>
-    diminished,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("half-diminished")]
-    halfdiminished,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class degree {
-    
-    private degreevalue degreevalueField;
-    
-    private degreealter degreealterField;
-    
-    private degreetype degreetypeField;
-    
-    private YesNo printobjectField;
-    
-    private bool printobjectFieldSpecified;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("degree-value")]
-    public degreevalue degreevalue {
-        get {
-            return this.degreevalueField;
-        }
-        set {
-            this.degreevalueField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("degree-alter")]
-    public degreealter degreealter {
-        get {
-            return this.degreealterField;
-        }
-        set {
-            this.degreealterField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("degree-type")]
-    public degreetype degreetype {
-        get {
-            return this.degreetypeField;
-        }
-        set {
-            this.degreetypeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("print-object")]
-    public YesNo printobject {
-        get {
-            return this.printobjectField;
-        }
-        set {
-            this.printobjectField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool printobjectSpecified {
-        get {
-            return this.printobjectFieldSpecified;
-        }
-        set {
-            this.printobjectFieldSpecified = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="bass-alter")]
-public partial class bassalter {
-    
-    private YesNo printobjectField;
-    
-    private bool printobjectFieldSpecified;
-    
-    private leftright locationField;
-    
-    private bool locationFieldSpecified;
-    
-    private decimal valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("print-object")]
-    public YesNo printobject {
-        get {
-            return this.printobjectField;
-        }
-        set {
-            this.printobjectField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool printobjectSpecified {
-        get {
-            return this.printobjectFieldSpecified;
-        }
-        set {
-            this.printobjectFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public leftright location {
-        get {
-            return this.locationField;
-        }
-        set {
-            this.locationField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool locationSpecified {
-        get {
-            return this.locationFieldSpecified;
-        }
-        set {
-            this.locationFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public decimal Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="bass-step")]
-public partial class bassstep {
-    
-    private string textField;
-    
-    private step valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string text {
-        get {
-            return this.textField;
-        }
-        set {
-            this.textField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public step Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-public enum step {
-    
-    /// <remarks/>
-    A,
-    
-    /// <remarks/>
-    B,
-    
-    /// <remarks/>
-    C,
-    
-    /// <remarks/>
-    D,
-    
-    /// <remarks/>
-    E,
-    
-    /// <remarks/>
-    F,
-    
-    /// <remarks/>
-    G,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class bass {
-    
-    private bassstep bassstepField;
-    
-    private bassalter bassalterField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("bass-step")]
-    public bassstep bassstep {
-        get {
-            return this.bassstepField;
-        }
-        set {
-            this.bassstepField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("bass-alter")]
-    public bassalter bassalter {
-        get {
-            return this.bassalterField;
-        }
-        set {
-            this.bassalterField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class inversion {
-    
-    private string valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute(DataType="nonNegativeInteger")]
-    public string Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class kind {
-    
-    private YesNo usesymbolsField;
-    
-    private bool usesymbolsFieldSpecified;
-    
-    private string textField;
-    
-    private YesNo stackdegreesField;
-    
-    private bool stackdegreesFieldSpecified;
-    
-    private YesNo parenthesesdegreesField;
-    
-    private bool parenthesesdegreesFieldSpecified;
-    
-    private YesNo bracketdegreesField;
-    
-    private bool bracketdegreesFieldSpecified;
-    
-    private leftcenterright halignField;
-    
-    private bool halignFieldSpecified;
-    
-    private valign valignField;
-    
-    private bool valignFieldSpecified;
-    
-    private kindvalue valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("use-symbols")]
-    public YesNo usesymbols {
-        get {
-            return this.usesymbolsField;
-        }
-        set {
-            this.usesymbolsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool usesymbolsSpecified {
-        get {
-            return this.usesymbolsFieldSpecified;
-        }
-        set {
-            this.usesymbolsFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string text {
-        get {
-            return this.textField;
-        }
-        set {
-            this.textField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("stack-degrees")]
-    public YesNo stackdegrees {
-        get {
-            return this.stackdegreesField;
-        }
-        set {
-            this.stackdegreesField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool stackdegreesSpecified {
-        get {
-            return this.stackdegreesFieldSpecified;
-        }
-        set {
-            this.stackdegreesFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("parentheses-degrees")]
-    public YesNo parenthesesdegrees {
-        get {
-            return this.parenthesesdegreesField;
-        }
-        set {
-            this.parenthesesdegreesField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool parenthesesdegreesSpecified {
-        get {
-            return this.parenthesesdegreesFieldSpecified;
-        }
-        set {
-            this.parenthesesdegreesFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("bracket-degrees")]
-    public YesNo bracketdegrees {
-        get {
-            return this.bracketdegreesField;
-        }
-        set {
-            this.bracketdegreesField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool bracketdegreesSpecified {
-        get {
-            return this.bracketdegreesFieldSpecified;
-        }
-        set {
-            this.bracketdegreesFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public leftcenterright halign {
-        get {
-            return this.halignField;
-        }
-        set {
-            this.halignField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool halignSpecified {
-        get {
-            return this.halignFieldSpecified;
-        }
-        set {
-            this.halignFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public valign valign {
-        get {
-            return this.valignField;
-        }
-        set {
-            this.valignField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool valignSpecified {
-        get {
-            return this.valignFieldSpecified;
-        }
-        set {
-            this.valignFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public kindvalue Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-public enum valign {
-    
-    /// <remarks/>
-    top,
-    
-    /// <remarks/>
-    middle,
-    
-    /// <remarks/>
-    bottom,
-    
-    /// <remarks/>
-    baseline,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="kind-value")]
-public enum kindvalue {
-    
-    /// <remarks/>
-    major,
-    
-    /// <remarks/>
-    minor,
-    
-    /// <remarks/>
-    augmented,
-    
-    /// <remarks/>
-    diminished,
-    
-    /// <remarks/>
-    dominant,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("major-seventh")]
-    majorseventh,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("minor-seventh")]
-    minorseventh,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("diminished-seventh")]
-    diminishedseventh,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("augmented-seventh")]
-    augmentedseventh,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("half-diminished")]
-    halfdiminished,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("major-minor")]
-    majorminor,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("major-sixth")]
-    majorsixth,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("minor-sixth")]
-    minorsixth,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("dominant-ninth")]
-    dominantninth,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("major-ninth")]
-    majorninth,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("minor-ninth")]
-    minorninth,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("dominant-11th")]
-    dominant11th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("major-11th")]
-    major11th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("minor-11th")]
-    minor11th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("dominant-13th")]
-    dominant13th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("major-13th")]
-    major13th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("minor-13th")]
-    minor13th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("suspended-second")]
-    suspendedsecond,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("suspended-fourth")]
-    suspendedfourth,
-    
-    /// <remarks/>
-    Neapolitan,
-    
-    /// <remarks/>
-    Italian,
-    
-    /// <remarks/>
-    French,
-    
-    /// <remarks/>
-    German,
-    
-    /// <remarks/>
-    pedal,
-    
-    /// <remarks/>
-    power,
-    
-    /// <remarks/>
-    Tristan,
-    
-    /// <remarks/>
-    other,
-    
-    /// <remarks/>
-    none,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="root-alter")]
-public partial class rootalter {
-    
-    private YesNo printobjectField;
-    
-    private bool printobjectFieldSpecified;
-    
-    private leftright locationField;
-    
-    private bool locationFieldSpecified;
-    
-    private decimal valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("print-object")]
-    public YesNo printobject {
-        get {
-            return this.printobjectField;
-        }
-        set {
-            this.printobjectField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool printobjectSpecified {
-        get {
-            return this.printobjectFieldSpecified;
-        }
-        set {
-            this.printobjectFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public leftright location {
-        get {
-            return this.locationField;
-        }
-        set {
-            this.locationField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool locationSpecified {
-        get {
-            return this.locationFieldSpecified;
-        }
-        set {
-            this.locationFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public decimal Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="root-step")]
-public partial class rootstep {
-    
-    private string textField;
-    
-    private step valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string text {
-        get {
-            return this.textField;
-        }
-        set {
-            this.textField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public step Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class root {
-    
-    private rootstep rootstepField;
-    
-    private rootalter rootalterField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("root-step")]
-    public rootstep rootstep {
-        get {
-            return this.rootstepField;
-        }
-        set {
-            this.rootstepField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("root-alter")]
-    public rootalter rootalter {
-        get {
-            return this.rootalterField;
-        }
-        set {
-            this.rootalterField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class harmony {
-    
-    private object[] itemsField;
-    
-    private kind[] kindField;
-    
-    private inversion[] inversionField;
-    
-    private bass[] bassField;
-    
-    private degree[] degreeField;
-    
-    private frame frameField;
-    
-    private offset offsetField;
-    
-    private FormattedText footnoteField;
-    
-    private Level levelField;
-    
-    private string staffField;
-    
-    private harmonytype typeField;
-    
-    private bool typeFieldSpecified;
-    
-    private YesNo printobjectField;
-    
-    private bool printobjectFieldSpecified;
-    
-    private YesNo printframeField;
-    
-    private bool printframeFieldSpecified;
-    
-    private AboveBelow placementField;
-    
-    private bool placementFieldSpecified;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("function", typeof(styletext))]
-    [System.Xml.Serialization.XmlElementAttribute("root", typeof(root))]
-    public object[] Items {
-        get {
-            return this.itemsField;
-        }
-        set {
-            this.itemsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("kind")]
-    public kind[] kind {
-        get {
-            return this.kindField;
-        }
-        set {
-            this.kindField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("inversion")]
-    public inversion[] inversion {
-        get {
-            return this.inversionField;
-        }
-        set {
-            this.inversionField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("bass")]
-    public bass[] bass {
-        get {
-            return this.bassField;
-        }
-        set {
-            this.bassField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("degree")]
-    public degree[] degree {
-        get {
-            return this.degreeField;
-        }
-        set {
-            this.degreeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public frame frame {
-        get {
-            return this.frameField;
-        }
-        set {
-            this.frameField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public offset offset {
-        get {
-            return this.offsetField;
-        }
-        set {
-            this.offsetField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public FormattedText footnote {
-        get {
-            return this.footnoteField;
-        }
-        set {
-            this.footnoteField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public Level level {
-        get {
-            return this.levelField;
-        }
-        set {
-            this.levelField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(DataType="positiveInteger")]
-    public string staff {
-        get {
-            return this.staffField;
-        }
-        set {
-            this.staffField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public harmonytype type {
-        get {
-            return this.typeField;
-        }
-        set {
-            this.typeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool typeSpecified {
-        get {
-            return this.typeFieldSpecified;
-        }
-        set {
-            this.typeFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("print-object")]
-    public YesNo printobject {
-        get {
-            return this.printobjectField;
-        }
-        set {
-            this.printobjectField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool printobjectSpecified {
-        get {
-            return this.printobjectFieldSpecified;
-        }
-        set {
-            this.printobjectFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("print-frame")]
-    public YesNo printframe {
-        get {
-            return this.printframeField;
-        }
-        set {
-            this.printframeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool printframeSpecified {
-        get {
-            return this.printframeFieldSpecified;
-        }
-        set {
-            this.printframeFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public AboveBelow placement {
-        get {
-            return this.placementField;
-        }
-        set {
-            this.placementField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool placementSpecified {
-        get {
-            return this.placementFieldSpecified;
-        }
-        set {
-            this.placementFieldSpecified = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class offset {
-    
-    private YesNo soundField;
-    
-    private bool soundFieldSpecified;
-    
-    private decimal valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public YesNo sound {
-        get {
-            return this.soundField;
-        }
-        set {
-            this.soundField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool soundSpecified {
-        get {
-            return this.soundFieldSpecified;
-        }
-        set {
-            this.soundFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public decimal Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="harmony-type")]
-public enum harmonytype {
-    
-    /// <remarks/>
-    @explicit,
-    
-    /// <remarks/>
-    implied,
-    
-    /// <remarks/>
-    alternate,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class slash {
-    
-    private notetypevalue slashtypeField;
-    
-    private empty[] slashdotField;
-    
-    private startstop typeField;
-    
-    private YesNo usedotsField;
-    
-    private bool usedotsFieldSpecified;
-    
-    private YesNo usestemsField;
-    
-    private bool usestemsFieldSpecified;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("slash-type")]
-    public notetypevalue slashtype {
-        get {
-            return this.slashtypeField;
-        }
-        set {
-            this.slashtypeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("slash-dot")]
-    public empty[] slashdot {
-        get {
-            return this.slashdotField;
-        }
-        set {
-            this.slashdotField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
-        get {
-            return this.typeField;
-        }
-        set {
-            this.typeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("use-dots")]
-    public YesNo usedots {
-        get {
-            return this.usedotsField;
-        }
-        set {
-            this.usedotsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool usedotsSpecified {
-        get {
-            return this.usedotsFieldSpecified;
-        }
-        set {
-            this.usedotsFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("use-stems")]
-    public YesNo usestems {
-        get {
-            return this.usestemsField;
-        }
-        set {
-            this.usestemsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool usestemsSpecified {
-        get {
-            return this.usestemsFieldSpecified;
-        }
-        set {
-            this.usestemsFieldSpecified = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="note-type-value")]
-public enum notetypevalue {
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("1024th")]
-    Item1024th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("512th")]
-    Item512th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("256th")]
-    Item256th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("128th")]
-    Item128th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("64th")]
-    Item64th,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("32nd")]
-    Item32nd,
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("16th")]
-    Item16th,
-    
-    /// <remarks/>
-    eighth,
-    
-    /// <remarks/>
-    quarter,
-    
-    /// <remarks/>
-    half,
-    
-    /// <remarks/>
-    whole,
-    
-    /// <remarks/>
-    breve,
-    
-    /// <remarks/>
-    @long,
-    
-    /// <remarks/>
-    maxima,
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class empty {
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="beat-repeat")]
-public partial class beatrepeat {
-    
-    private notetypevalue slashtypeField;
-    
-    private empty[] slashdotField;
-    
-    private startstop typeField;
-    
-    private string slashesField;
-    
-    private YesNo usedotsField;
-    
-    private bool usedotsFieldSpecified;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("slash-type")]
-    public notetypevalue slashtype {
-        get {
-            return this.slashtypeField;
-        }
-        set {
-            this.slashtypeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("slash-dot")]
-    public empty[] slashdot {
-        get {
-            return this.slashdotField;
-        }
-        set {
-            this.slashdotField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
-        get {
-            return this.typeField;
-        }
-        set {
-            this.typeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
-    public string slashes {
-        get {
-            return this.slashesField;
-        }
-        set {
-            this.slashesField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("use-dots")]
-    public YesNo usedots {
-        get {
-            return this.usedotsField;
-        }
-        set {
-            this.usedotsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool usedotsSpecified {
-        get {
-            return this.usedotsFieldSpecified;
-        }
-        set {
-            this.usedotsFieldSpecified = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="measure-repeat")]
-public partial class measurerepeat {
-    
-    private startstop typeField;
-    
-    private string slashesField;
-    
-    private string valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
-        get {
-            return this.typeField;
-        }
-        set {
-            this.typeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
-    public string slashes {
-        get {
-            return this.slashesField;
-        }
-        set {
-            this.slashesField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public string Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="multiple-rest")]
-public partial class multiplerest {
-    
-    private YesNo usesymbolsField;
-    
-    private bool usesymbolsFieldSpecified;
-    
-    private string valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("use-symbols")]
-    public YesNo usesymbols {
-        get {
-            return this.usesymbolsField;
-        }
-        set {
-            this.usesymbolsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool usesymbolsSpecified {
-        get {
-            return this.usesymbolsFieldSpecified;
-        }
-        set {
-            this.usesymbolsFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public string Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="measure-style")]
-public partial class measurestyle {
-    
-    private object itemField;
-    
-    private string numberField;
-    
-    private string fontfamilyField;
-    
-    private fontstyle fontstyleField;
-    
-    private bool fontstyleFieldSpecified;
-    
-    private string fontsizeField;
-    
-    private fontweight fontweightField;
-    
-    private bool fontweightFieldSpecified;
-    
-    private string colorField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("beat-repeat", typeof(beatrepeat))]
-    [System.Xml.Serialization.XmlElementAttribute("measure-repeat", typeof(measurerepeat))]
-    [System.Xml.Serialization.XmlElementAttribute("multiple-rest", typeof(multiplerest))]
-    [System.Xml.Serialization.XmlElementAttribute("slash", typeof(slash))]
-    public object Item {
-        get {
-            return this.itemField;
-        }
-        set {
-            this.itemField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
-    public string number {
-        get {
-            return this.numberField;
-        }
-        set {
-            this.numberField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("font-family", DataType="token")]
-    public string fontfamily {
-        get {
-            return this.fontfamilyField;
-        }
-        set {
-            this.fontfamilyField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
-        get {
-            return this.fontstyleField;
-        }
-        set {
-            this.fontstyleField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool fontstyleSpecified {
-        get {
-            return this.fontstyleFieldSpecified;
-        }
-        set {
-            this.fontstyleFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("font-size")]
-    public string fontsize {
-        get {
-            return this.fontsizeField;
-        }
-        set {
-            this.fontsizeField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
-        get {
-            return this.fontweightField;
-        }
-        set {
-            this.fontweightField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool fontweightSpecified {
-        get {
-            return this.fontweightFieldSpecified;
-        }
-        set {
-            this.fontweightFieldSpecified = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-    public string color {
-        get {
-            return this.colorField;
-        }
-        set {
-            this.colorField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-public partial class transpose {
+public partial class Transpose {
     
     private string diatonicField;
     
@@ -3646,7 +29,7 @@ public partial class transpose {
     
     private string octavechangeField;
     
-    private empty doubleField;
+    private Empty doubleField;
     
     private string numberField;
     
@@ -3683,7 +66,7 @@ public partial class transpose {
     }
     
     /// <remarks/>
-    public empty @double {
+    public Empty @double {
         get {
             return this.doubleField;
         }
@@ -3712,7 +95,7 @@ public partial class transpose {
 [System.Xml.Serialization.XmlTypeAttribute(TypeName="staff-tuning")]
 public partial class stafftuning {
     
-    private step tuningstepField;
+    private Step tuningstepField;
     
     private decimal tuningalterField;
     
@@ -3724,7 +107,7 @@ public partial class stafftuning {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("tuning-step")]
-    public step tuningstep {
+    public Step tuningstep {
         get {
             return this.tuningstepField;
         }
@@ -4866,9 +1249,9 @@ public partial class key {
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("cancel", typeof(cancel))]
     [System.Xml.Serialization.XmlElementAttribute("fifths", typeof(string), DataType="integer")]
-    [System.Xml.Serialization.XmlElementAttribute("key-accidental", typeof(accidentalvalue))]
+    [System.Xml.Serialization.XmlElementAttribute("key-accidental", typeof(AccidentalValue))]
     [System.Xml.Serialization.XmlElementAttribute("key-alter", typeof(decimal))]
-    [System.Xml.Serialization.XmlElementAttribute("key-step", typeof(step))]
+    [System.Xml.Serialization.XmlElementAttribute("key-step", typeof(Step))]
     [System.Xml.Serialization.XmlElementAttribute("mode", typeof(string))]
     [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
     public object[] Items {
@@ -4994,11 +1377,11 @@ public partial class attributes {
     
     private staffdetails[] staffdetailsField;
     
-    private transpose[] transposeField;
+    private Transpose[] transposeField;
     
     private attributesDirective[] directiveField;
     
-    private measurestyle[] measurestyleField;
+    private MeasureStyle[] _measureStyleField;
     
     /// <remarks/>
     public FormattedText footnote {
@@ -5120,7 +1503,7 @@ public partial class attributes {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("transpose")]
-    public transpose[] transpose {
+    public Transpose[] transpose {
         get {
             return this.transposeField;
         }
@@ -5142,12 +1525,12 @@ public partial class attributes {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("measure-style")]
-    public measurestyle[] measurestyle {
+    public MeasureStyle[] MeasureStyle {
         get {
-            return this.measurestyleField;
+            return this._measureStyleField;
         }
         set {
-            this.measurestyleField = value;
+            this._measureStyleField = value;
         }
     }
 }
@@ -5200,7 +1583,7 @@ public partial class sound {
     
     private play[] playField;
     
-    private offset offsetField;
+    private Offset offsetField;
     
     private decimal tempoField;
     
@@ -5286,7 +1669,7 @@ public partial class sound {
     }
     
     /// <remarks/>
-    public offset offset {
+    public Offset offset {
         get {
             return this.offsetField;
         }
@@ -6259,7 +2642,7 @@ public partial class percussion {
     [System.Xml.Serialization.XmlElementAttribute("pitched", typeof(pitched))]
     [System.Xml.Serialization.XmlElementAttribute("stick", typeof(stick))]
     [System.Xml.Serialization.XmlElementAttribute("stick-location", typeof(sticklocation))]
-    [System.Xml.Serialization.XmlElementAttribute("timpani", typeof(empty))]
+    [System.Xml.Serialization.XmlElementAttribute("timpani", typeof(Empty))]
     [System.Xml.Serialization.XmlElementAttribute("wood", typeof(wood))]
     public object Item {
         get {
@@ -6643,15 +3026,15 @@ public enum enclosureshape {
 [System.Xml.Serialization.XmlTypeAttribute(TypeName="accordion-registration")]
 public partial class accordionregistration {
     
-    private empty accordionhighField;
+    private Empty accordionhighField;
     
     private string accordionmiddleField;
     
-    private empty accordionlowField;
+    private Empty accordionlowField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("accordion-high")]
-    public empty accordionhigh {
+    public Empty accordionhigh {
         get {
             return this.accordionhighField;
         }
@@ -6673,7 +3056,7 @@ public partial class accordionregistration {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("accordion-low")]
-    public empty accordionlow {
+    public Empty accordionlow {
         get {
             return this.accordionlowField;
         }
@@ -6691,7 +3074,7 @@ public partial class accordionregistration {
 [System.Xml.Serialization.XmlTypeAttribute(TypeName="principal-voice")]
 public partial class principalvoice {
     
-    private startstop typeField;
+    private StartStop typeField;
     
     private principalvoicesymbol symbolField;
     
@@ -6699,7 +3082,7 @@ public partial class principalvoice {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
+    public StartStop type {
         get {
             return this.typeField;
         }
@@ -6778,7 +3161,7 @@ public partial class scordatura {
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 public partial class accord {
     
-    private step tuningstepField;
+    private Step tuningstepField;
     
     private decimal tuningalterField;
     
@@ -6790,7 +3173,7 @@ public partial class accord {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("tuning-step")]
-    public step tuningstep {
+    public Step tuningstep {
         get {
             return this.tuningstepField;
         }
@@ -6887,13 +3270,13 @@ public enum onoff {
 [System.Xml.Serialization.XmlTypeAttribute(TypeName="pedal-tuning")]
 public partial class pedaltuning {
     
-    private step pedalstepField;
+    private Step pedalstepField;
     
     private decimal pedalalterField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("pedal-step")]
-    public step pedalstep {
+    public Step pedalstep {
         get {
             return this.pedalstepField;
         }
@@ -7132,9 +3515,9 @@ public enum beamvalue {
 [System.Xml.Serialization.XmlTypeAttribute(TypeName="metronome-note")]
 public partial class metronomenote {
     
-    private notetypevalue metronometypeField;
+    private NoteTypeValue metronometypeField;
     
-    private empty[] metronomedotField;
+    private Empty[] metronomedotField;
     
     private metronomebeam[] metronomebeamField;
     
@@ -7142,7 +3525,7 @@ public partial class metronomenote {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("metronome-type")]
-    public notetypevalue metronometype {
+    public NoteTypeValue metronometype {
         get {
             return this.metronometypeField;
         }
@@ -7153,7 +3536,7 @@ public partial class metronomenote {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("metronome-dot")]
-    public empty[] metronomedot {
+    public Empty[] metronomedot {
         get {
             return this.metronomedotField;
         }
@@ -7193,7 +3576,7 @@ public partial class metronomenote {
 [System.Xml.Serialization.XmlTypeAttribute(TypeName="metronome-tuplet")]
 public partial class metronometuplet : timemodification {
     
-    private startstop typeField;
+    private StartStop typeField;
     
     private YesNo bracketField;
     
@@ -7205,7 +3588,7 @@ public partial class metronometuplet : timemodification {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
+    public StartStop type {
         get {
             return this.typeField;
         }
@@ -7288,9 +3671,9 @@ public partial class timemodification {
     
     private string normalnotesField;
     
-    private notetypevalue normaltypeField;
+    private NoteTypeValue normaltypeField;
     
-    private empty[] normaldotField;
+    private Empty[] normaldotField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("actual-notes", DataType="nonNegativeInteger")]
@@ -7316,7 +3699,7 @@ public partial class timemodification {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("normal-type")]
-    public notetypevalue normaltype {
+    public NoteTypeValue normaltype {
         get {
             return this.normaltypeField;
         }
@@ -7327,7 +3710,7 @@ public partial class timemodification {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("normal-dot")]
-    public empty[] normaldot {
+    public Empty[] normaldot {
         get {
             return this.normaldotField;
         }
@@ -7347,13 +3730,13 @@ public partial class perminute {
     
     private string fontfamilyField;
     
-    private fontstyle fontstyleField;
+    private FontStyle _fontStyleField;
     
     private bool fontstyleFieldSpecified;
     
     private string fontsizeField;
     
-    private fontweight fontweightField;
+    private FontWeight _fontWeightField;
     
     private bool fontweightFieldSpecified;
     
@@ -7372,12 +3755,12 @@ public partial class perminute {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
+    public FontStyle FontStyle {
         get {
-            return this.fontstyleField;
+            return this._fontStyleField;
         }
         set {
-            this.fontstyleField = value;
+            this._fontStyleField = value;
         }
     }
     
@@ -7405,12 +3788,12 @@ public partial class perminute {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
+    public FontWeight FontWeight {
         get {
-            return this.fontweightField;
+            return this._fontWeightField;
         }
         set {
-            this.fontweightField = value;
+            this._fontWeightField = value;
         }
     }
     
@@ -7446,7 +3829,7 @@ public partial class metronome {
     
     private object[] itemsField;
     
-    private leftcenterright justifyField;
+    private LeftCenterRight justifyField;
     
     private bool justifyFieldSpecified;
     
@@ -7455,8 +3838,8 @@ public partial class metronome {
     private bool parenthesesFieldSpecified;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("beat-unit", typeof(notetypevalue))]
-    [System.Xml.Serialization.XmlElementAttribute("beat-unit-dot", typeof(empty))]
+    [System.Xml.Serialization.XmlElementAttribute("beat-unit", typeof(NoteTypeValue))]
+    [System.Xml.Serialization.XmlElementAttribute("beat-unit-dot", typeof(Empty))]
     [System.Xml.Serialization.XmlElementAttribute("metronome-note", typeof(metronomenote))]
     [System.Xml.Serialization.XmlElementAttribute("metronome-relation", typeof(string))]
     [System.Xml.Serialization.XmlElementAttribute("per-minute", typeof(perminute))]
@@ -7471,7 +3854,7 @@ public partial class metronome {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public leftcenterright justify {
+    public LeftCenterRight justify {
         get {
             return this.justifyField;
         }
@@ -8502,30 +4885,30 @@ public partial class dynamics {
     private bool enclosureFieldSpecified;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("f", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("ff", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("fff", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("ffff", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("fffff", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("ffffff", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("fp", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("fz", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("mf", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("mp", typeof(empty))]
+    [System.Xml.Serialization.XmlElementAttribute("f", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("ff", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("fff", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("ffff", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("fffff", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("ffffff", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("fp", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("fz", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("mf", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("mp", typeof(Empty))]
     [System.Xml.Serialization.XmlElementAttribute("other-dynamics", typeof(string))]
-    [System.Xml.Serialization.XmlElementAttribute("p", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("pp", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("ppp", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("pppp", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("ppppp", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("pppppp", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("rf", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("rfz", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("sf", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("sffz", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("sfp", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("sfpp", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("sfz", typeof(empty))]
+    [System.Xml.Serialization.XmlElementAttribute("p", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("pp", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("ppp", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("pppp", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("ppppp", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("pppppp", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("rf", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("rfz", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("sf", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("sffz", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("sfp", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("sfpp", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("sfz", typeof(Empty))]
     [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
     public object[] Items {
         get {
@@ -8829,7 +5212,7 @@ public partial class direction {
     
     private directiontype[] directiontypeField;
     
-    private offset offsetField;
+    private Offset offsetField;
     
     private FormattedText footnoteField;
     
@@ -8861,7 +5244,7 @@ public partial class direction {
     }
     
     /// <remarks/>
-    public offset offset {
+    public Offset offset {
         get {
             return this.offsetField;
         }
@@ -9089,13 +5472,13 @@ public partial class textfontcolor {
     
     private string fontfamilyField;
     
-    private fontstyle fontstyleField;
+    private FontStyle _fontStyleField;
     
     private bool fontstyleFieldSpecified;
     
     private string fontsizeField;
     
-    private fontweight fontweightField;
+    private FontWeight _fontWeightField;
     
     private bool fontweightFieldSpecified;
     
@@ -9134,12 +5517,12 @@ public partial class textfontcolor {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
+    public FontStyle FontStyle {
         get {
-            return this.fontstyleField;
+            return this._fontStyleField;
         }
         set {
-            this.fontstyleField = value;
+            this._fontStyleField = value;
         }
     }
     
@@ -9167,12 +5550,12 @@ public partial class textfontcolor {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
+    public FontWeight FontWeight {
         get {
-            return this.fontweightField;
+            return this._fontWeightField;
         }
         set {
-            this.fontweightField = value;
+            this._fontWeightField = value;
         }
     }
     
@@ -9338,13 +5721,13 @@ public partial class textelementdata {
     
     private string fontfamilyField;
     
-    private fontstyle fontstyleField;
+    private FontStyle _fontStyleField;
     
     private bool fontstyleFieldSpecified;
     
     private string fontsizeField;
     
-    private fontweight fontweightField;
+    private FontWeight _fontWeightField;
     
     private bool fontweightFieldSpecified;
     
@@ -9383,12 +5766,12 @@ public partial class textelementdata {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
+    public FontStyle FontStyle {
         get {
-            return this.fontstyleField;
+            return this._fontStyleField;
         }
         set {
-            this.fontstyleField = value;
+            this._fontStyleField = value;
         }
     }
     
@@ -9416,12 +5799,12 @@ public partial class textelementdata {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
+    public FontWeight FontWeight {
         get {
-            return this.fontweightField;
+            return this._fontWeightField;
         }
         set {
-            this.fontweightField = value;
+            this._fontWeightField = value;
         }
     }
     
@@ -9569,9 +5952,9 @@ public partial class lyric {
     
     private ItemsChoiceType6[] itemsElementNameField;
     
-    private empty endlineField;
+    private Empty endlineField;
     
-    private empty endparagraphField;
+    private Empty endparagraphField;
     
     private FormattedText footnoteField;
     
@@ -9581,7 +5964,7 @@ public partial class lyric {
     
     private string nameField;
     
-    private leftcenterright justifyField;
+    private LeftCenterRight justifyField;
     
     private bool justifyFieldSpecified;
     
@@ -9613,9 +5996,9 @@ public partial class lyric {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("elision", typeof(textfontcolor))]
-    [System.Xml.Serialization.XmlElementAttribute("extend", typeof(extend))]
-    [System.Xml.Serialization.XmlElementAttribute("humming", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("laughing", typeof(empty))]
+    [System.Xml.Serialization.XmlElementAttribute("extend", typeof(Extend))]
+    [System.Xml.Serialization.XmlElementAttribute("humming", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("laughing", typeof(Empty))]
     [System.Xml.Serialization.XmlElementAttribute("syllabic", typeof(syllabic))]
     [System.Xml.Serialization.XmlElementAttribute("text", typeof(textelementdata))]
     [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
@@ -9642,7 +6025,7 @@ public partial class lyric {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("end-line")]
-    public empty endline {
+    public Empty endline {
         get {
             return this.endlineField;
         }
@@ -9653,7 +6036,7 @@ public partial class lyric {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("end-paragraph")]
-    public empty endparagraph {
+    public Empty endparagraph {
         get {
             return this.endparagraphField;
         }
@@ -9706,7 +6089,7 @@ public partial class lyric {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public leftcenterright justify {
+    public LeftCenterRight justify {
         get {
             return this.justifyField;
         }
@@ -10902,9 +7285,9 @@ public partial class technical {
     [System.Xml.Serialization.XmlElementAttribute("bend", typeof(bend))]
     [System.Xml.Serialization.XmlElementAttribute("double-tongue", typeof(emptyplacement))]
     [System.Xml.Serialization.XmlElementAttribute("down-bow", typeof(emptyplacement))]
-    [System.Xml.Serialization.XmlElementAttribute("fingering", typeof(fingering))]
+    [System.Xml.Serialization.XmlElementAttribute("fingering", typeof(Fingering))]
     [System.Xml.Serialization.XmlElementAttribute("fingernails", typeof(emptyplacement))]
-    [System.Xml.Serialization.XmlElementAttribute("fret", typeof(fret))]
+    [System.Xml.Serialization.XmlElementAttribute("fret", typeof(Fret))]
     [System.Xml.Serialization.XmlElementAttribute("hammer-on", typeof(hammeronpulloff))]
     [System.Xml.Serialization.XmlElementAttribute("handbell", typeof(handbell))]
     [System.Xml.Serialization.XmlElementAttribute("harmonic", typeof(harmonic))]
@@ -11094,7 +7477,7 @@ public partial class bend {
     
     private decimal bendalterField;
     
-    private empty itemField;
+    private Empty itemField;
     
     private ItemChoiceType1 itemElementNameField;
     
@@ -11128,10 +7511,10 @@ public partial class bend {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("pre-bend", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("release", typeof(empty))]
+    [System.Xml.Serialization.XmlElementAttribute("pre-bend", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("release", typeof(Empty))]
     [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
-    public empty Item {
+    public Empty Item {
         get {
             return this.itemField;
         }
@@ -11273,7 +7656,7 @@ public enum ItemChoiceType1 {
 [System.Xml.Serialization.XmlTypeAttribute(TypeName="hammer-on-pull-off")]
 public partial class hammeronpulloff {
     
-    private startstop typeField;
+    private StartStop typeField;
     
     private string numberField;
     
@@ -11289,7 +7672,7 @@ public partial class hammeronpulloff {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
+    public StartStop type {
         get {
             return this.typeField;
         }
@@ -11444,11 +7827,11 @@ public enum handbellvalue {
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 public partial class harmonic {
     
-    private empty itemField;
+    private Empty itemField;
     
     private ItemChoiceType itemElementNameField;
     
-    private empty item1Field;
+    private Empty item1Field;
     
     private Item1ChoiceType item1ElementNameField;
     
@@ -11461,10 +7844,10 @@ public partial class harmonic {
     private bool placementFieldSpecified;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("artificial", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("natural", typeof(empty))]
+    [System.Xml.Serialization.XmlElementAttribute("artificial", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("natural", typeof(Empty))]
     [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
-    public empty Item {
+    public Empty Item {
         get {
             return this.itemField;
         }
@@ -11485,11 +7868,11 @@ public partial class harmonic {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("base-pitch", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("sounding-pitch", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("touching-pitch", typeof(empty))]
+    [System.Xml.Serialization.XmlElementAttribute("base-pitch", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("sounding-pitch", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("touching-pitch", typeof(Empty))]
     [System.Xml.Serialization.XmlChoiceIdentifierAttribute("Item1ElementName")]
-    public empty Item1 {
+    public Empty Item1 {
         get {
             return this.item1Field;
         }
@@ -11843,7 +8226,7 @@ public partial class accidentalmark {
     
     private bool placementFieldSpecified;
     
-    private accidentalvalue valueField;
+    private AccidentalValue valueField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -11869,7 +8252,7 @@ public partial class accidentalmark {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlTextAttribute()]
-    public accidentalvalue Value {
+    public AccidentalValue Value {
         get {
             return this.valueField;
         }
@@ -12613,7 +8996,7 @@ public enum ItemsChoiceType2 {
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 public partial class slide {
     
-    private startstop typeField;
+    private StartStop typeField;
     
     private string numberField;
     
@@ -12653,7 +9036,7 @@ public partial class slide {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
+    public StartStop type {
         get {
             return this.typeField;
         }
@@ -12847,7 +9230,7 @@ public partial class slide {
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 public partial class glissando {
     
-    private startstop typeField;
+    private StartStop typeField;
     
     private string numberField;
     
@@ -12871,7 +9254,7 @@ public partial class glissando {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
+    public StartStop type {
         get {
             return this.typeField;
         }
@@ -12980,13 +9363,13 @@ public partial class tupletdot {
     
     private string fontfamilyField;
     
-    private fontstyle fontstyleField;
+    private FontStyle _fontStyleField;
     
     private bool fontstyleFieldSpecified;
     
     private string fontsizeField;
     
-    private fontweight fontweightField;
+    private FontWeight _fontWeightField;
     
     private bool fontweightFieldSpecified;
     
@@ -13005,12 +9388,12 @@ public partial class tupletdot {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
+    public FontStyle FontStyle {
         get {
-            return this.fontstyleField;
+            return this._fontStyleField;
         }
         set {
-            this.fontstyleField = value;
+            this._fontStyleField = value;
         }
     }
     
@@ -13038,12 +9421,12 @@ public partial class tupletdot {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
+    public FontWeight FontWeight {
         get {
-            return this.fontweightField;
+            return this._fontWeightField;
         }
         set {
-            this.fontweightField = value;
+            this._fontWeightField = value;
         }
     }
     
@@ -13080,19 +9463,19 @@ public partial class tuplettype {
     
     private string fontfamilyField;
     
-    private fontstyle fontstyleField;
+    private FontStyle _fontStyleField;
     
     private bool fontstyleFieldSpecified;
     
     private string fontsizeField;
     
-    private fontweight fontweightField;
+    private FontWeight _fontWeightField;
     
     private bool fontweightFieldSpecified;
     
     private string colorField;
     
-    private notetypevalue valueField;
+    private NoteTypeValue valueField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-family", DataType="token")]
@@ -13107,12 +9490,12 @@ public partial class tuplettype {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
+    public FontStyle FontStyle {
         get {
-            return this.fontstyleField;
+            return this._fontStyleField;
         }
         set {
-            this.fontstyleField = value;
+            this._fontStyleField = value;
         }
     }
     
@@ -13140,12 +9523,12 @@ public partial class tuplettype {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
+    public FontWeight FontWeight {
         get {
-            return this.fontweightField;
+            return this._fontWeightField;
         }
         set {
-            this.fontweightField = value;
+            this._fontWeightField = value;
         }
     }
     
@@ -13173,7 +9556,7 @@ public partial class tuplettype {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlTextAttribute()]
-    public notetypevalue Value {
+    public NoteTypeValue Value {
         get {
             return this.valueField;
         }
@@ -13193,13 +9576,13 @@ public partial class tupletnumber {
     
     private string fontfamilyField;
     
-    private fontstyle fontstyleField;
+    private FontStyle _fontStyleField;
     
     private bool fontstyleFieldSpecified;
     
     private string fontsizeField;
     
-    private fontweight fontweightField;
+    private FontWeight _fontWeightField;
     
     private bool fontweightFieldSpecified;
     
@@ -13220,12 +9603,12 @@ public partial class tupletnumber {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
+    public FontStyle FontStyle {
         get {
-            return this.fontstyleField;
+            return this._fontStyleField;
         }
         set {
-            this.fontstyleField = value;
+            this._fontStyleField = value;
         }
     }
     
@@ -13253,12 +9636,12 @@ public partial class tupletnumber {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
+    public FontWeight FontWeight {
         get {
-            return this.fontweightField;
+            return this._fontWeightField;
         }
         set {
-            this.fontweightField = value;
+            this._fontWeightField = value;
         }
     }
     
@@ -13355,7 +9738,7 @@ public partial class tuplet {
     
     private tupletportion tupletnormalField;
     
-    private startstop typeField;
+    private StartStop typeField;
     
     private string numberField;
     
@@ -13419,7 +9802,7 @@ public partial class tuplet {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
+    public StartStop type {
         get {
             return this.typeField;
         }
@@ -14744,7 +11127,7 @@ public partial class noteheadtext {
     private object[] itemsField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("accidental-text", typeof(accidentaltext))]
+    [System.Xml.Serialization.XmlElementAttribute("accidental-text", typeof(AccidentalText))]
     [System.Xml.Serialization.XmlElementAttribute("display-text", typeof(FormattedText))]
     public object[] Items {
         get {
@@ -14773,13 +11156,13 @@ public partial class notehead {
     
     private string fontfamilyField;
     
-    private fontstyle fontstyleField;
+    private FontStyle _fontStyleField;
     
     private bool fontstyleFieldSpecified;
     
     private string fontsizeField;
     
-    private fontweight fontweightField;
+    private FontWeight _fontWeightField;
     
     private bool fontweightFieldSpecified;
     
@@ -14844,12 +11227,12 @@ public partial class notehead {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
+    public FontStyle FontStyle {
         get {
-            return this.fontstyleField;
+            return this._fontStyleField;
         }
         set {
-            this.fontstyleField = value;
+            this._fontStyleField = value;
         }
     }
     
@@ -14877,12 +11260,12 @@ public partial class notehead {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
+    public FontWeight FontWeight {
         get {
-            return this.fontweightField;
+            return this._fontWeightField;
         }
         set {
-            this.fontweightField = value;
+            this._fontWeightField = value;
         }
     }
     
@@ -15197,7 +11580,7 @@ public partial class accidental {
     
     private bool sizeFieldSpecified;
     
-    private accidentalvalue valueField;
+    private AccidentalValue valueField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -15311,7 +11694,7 @@ public partial class accidental {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlTextAttribute()]
-    public accidentalvalue Value {
+    public AccidentalValue Value {
         get {
             return this.valueField;
         }
@@ -15333,7 +11716,7 @@ public partial class notetype {
     
     private bool sizeFieldSpecified;
     
-    private notetypevalue valueField;
+    private NoteTypeValue valueField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -15359,7 +11742,7 @@ public partial class notetype {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlTextAttribute()]
-    public notetypevalue Value {
+    public NoteTypeValue Value {
         get {
             return this.valueField;
         }
@@ -15397,13 +11780,13 @@ public partial class instrument {
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 public partial class tie {
     
-    private startstop typeField;
+    private StartStop typeField;
     
     private string timeonlyField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
+    public StartStop type {
         get {
             return this.typeField;
         }
@@ -15431,7 +11814,7 @@ public partial class tie {
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 public partial class rest {
     
-    private step displaystepField;
+    private Step displaystepField;
     
     private string displayoctaveField;
     
@@ -15441,7 +11824,7 @@ public partial class rest {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("display-step")]
-    public step displaystep {
+    public Step displaystep {
         get {
             return this.displaystepField;
         }
@@ -15491,13 +11874,13 @@ public partial class rest {
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 public partial class unpitched {
     
-    private step displaystepField;
+    private Step displaystepField;
     
     private string displayoctaveField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("display-step")]
-    public step displaystep {
+    public Step displaystep {
         get {
             return this.displaystepField;
         }
@@ -15525,7 +11908,7 @@ public partial class unpitched {
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 public partial class pitch {
     
-    private step stepField;
+    private Step stepField;
     
     private decimal alterField;
     
@@ -15534,7 +11917,7 @@ public partial class pitch {
     private string octaveField;
     
     /// <remarks/>
-    public step step {
+    public Step step {
         get {
             return this.stepField;
         }
@@ -15749,13 +12132,13 @@ public partial class note {
     
     private string fontfamilyField;
     
-    private fontstyle fontstyleField;
+    private FontStyle _fontStyleField;
     
     private bool fontstyleFieldSpecified;
     
     private string fontsizeField;
     
-    private fontweight fontweightField;
+    private FontWeight _fontWeightField;
     
     private bool fontweightFieldSpecified;
     
@@ -15792,8 +12175,8 @@ public partial class note {
     private bool pizzicatoFieldSpecified;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("chord", typeof(empty))]
-    [System.Xml.Serialization.XmlElementAttribute("cue", typeof(empty))]
+    [System.Xml.Serialization.XmlElementAttribute("chord", typeof(Empty))]
+    [System.Xml.Serialization.XmlElementAttribute("cue", typeof(Empty))]
     [System.Xml.Serialization.XmlElementAttribute("duration", typeof(decimal))]
     [System.Xml.Serialization.XmlElementAttribute("grace", typeof(grace))]
     [System.Xml.Serialization.XmlElementAttribute("pitch", typeof(pitch))]
@@ -16090,12 +12473,12 @@ public partial class note {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
+    public FontStyle FontStyle {
         get {
-            return this.fontstyleField;
+            return this._fontStyleField;
         }
         set {
-            this.fontstyleField = value;
+            this._fontStyleField = value;
         }
     }
     
@@ -16123,12 +12506,12 @@ public partial class note {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
+    public FontWeight FontWeight {
         get {
-            return this.fontweightField;
+            return this._fontWeightField;
         }
         set {
-            this.fontweightField = value;
+            this._fontWeightField = value;
         }
     }
     
@@ -16441,7 +12824,7 @@ public partial class scoreinstrument {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("ensemble", typeof(string))]
-    [System.Xml.Serialization.XmlElementAttribute("solo", typeof(empty))]
+    [System.Xml.Serialization.XmlElementAttribute("solo", typeof(Empty))]
     public object Item {
         get {
             return this.itemField;
@@ -16508,11 +12891,11 @@ public partial class scorepart {
     
     private partname partnameField;
     
-    private namedisplay partnamedisplayField;
+    private NameDisplay partnamedisplayField;
     
     private partname partabbreviationField;
     
-    private namedisplay partabbreviationdisplayField;
+    private NameDisplay partabbreviationdisplayField;
     
     private string[] groupField;
     
@@ -16547,7 +12930,7 @@ public partial class scorepart {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("part-name-display")]
-    public namedisplay partnamedisplay {
+    public NameDisplay partnamedisplay {
         get {
             return this.partnamedisplayField;
         }
@@ -16569,7 +12952,7 @@ public partial class scorepart {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("part-abbreviation-display")]
-    public namedisplay partabbreviationdisplay {
+    public NameDisplay partabbreviationdisplay {
         get {
             return this.partabbreviationdisplayField;
         }
@@ -17134,23 +13517,23 @@ public partial class partgroup {
     
     private groupname groupnameField;
     
-    private namedisplay groupnamedisplayField;
+    private NameDisplay groupnamedisplayField;
     
     private groupname groupabbreviationField;
     
-    private namedisplay groupabbreviationdisplayField;
+    private NameDisplay groupabbreviationdisplayField;
     
     private groupsymbol groupsymbolField;
     
     private groupbarline groupbarlineField;
     
-    private empty grouptimeField;
+    private Empty grouptimeField;
     
     private FormattedText footnoteField;
     
     private Level levelField;
     
-    private startstop typeField;
+    private StartStop typeField;
     
     private string numberField;
     
@@ -17171,7 +13554,7 @@ public partial class partgroup {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("group-name-display")]
-    public namedisplay groupnamedisplay {
+    public NameDisplay groupnamedisplay {
         get {
             return this.groupnamedisplayField;
         }
@@ -17193,7 +13576,7 @@ public partial class partgroup {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("group-abbreviation-display")]
-    public namedisplay groupabbreviationdisplay {
+    public NameDisplay groupabbreviationdisplay {
         get {
             return this.groupabbreviationdisplayField;
         }
@@ -17226,7 +13609,7 @@ public partial class partgroup {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("group-time")]
-    public empty grouptime {
+    public Empty grouptime {
         get {
             return this.grouptimeField;
         }
@@ -17257,7 +13640,7 @@ public partial class partgroup {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public startstop type {
+    public StartStop type {
         get {
             return this.typeField;
         }
@@ -17776,13 +14159,13 @@ public partial class lyricfont {
     
     private string fontfamilyField;
     
-    private fontstyle fontstyleField;
+    private FontStyle _fontStyleField;
     
     private bool fontstyleFieldSpecified;
     
     private string fontsizeField;
     
-    private fontweight fontweightField;
+    private FontWeight _fontWeightField;
     
     private bool fontweightFieldSpecified;
     
@@ -17821,12 +14204,12 @@ public partial class lyricfont {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
+    public FontStyle FontStyle {
         get {
-            return this.fontstyleField;
+            return this._fontStyleField;
         }
         set {
-            this.fontstyleField = value;
+            this._fontStyleField = value;
         }
     }
     
@@ -17854,12 +14237,12 @@ public partial class lyricfont {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
+    public FontWeight FontWeight {
         get {
-            return this.fontweightField;
+            return this._fontWeightField;
         }
         set {
-            this.fontweightField = value;
+            this._fontWeightField = value;
         }
     }
     
@@ -17885,13 +14268,13 @@ public partial class emptyfont {
     
     private string fontfamilyField;
     
-    private fontstyle fontstyleField;
+    private FontStyle _fontStyleField;
     
     private bool fontstyleFieldSpecified;
     
     private string fontsizeField;
     
-    private fontweight fontweightField;
+    private FontWeight _fontWeightField;
     
     private bool fontweightFieldSpecified;
     
@@ -17908,12 +14291,12 @@ public partial class emptyfont {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-style")]
-    public fontstyle fontstyle {
+    public FontStyle FontStyle {
         get {
-            return this.fontstyleField;
+            return this._fontStyleField;
         }
         set {
-            this.fontstyleField = value;
+            this._fontStyleField = value;
         }
     }
     
@@ -17941,12 +14324,12 @@ public partial class emptyfont {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute("font-weight")]
-    public fontweight fontweight {
+    public FontWeight FontWeight {
         get {
-            return this.fontweightField;
+            return this._fontWeightField;
         }
         set {
-            this.fontweightField = value;
+            this._fontWeightField = value;
         }
     }
     
@@ -18218,11 +14601,11 @@ public partial class defaults {
     
     private scaling scalingField;
     
-    private pagelayout pagelayoutField;
+    private PageLayout _pageLayoutField;
     
-    private systemlayout systemlayoutField;
+    private SystemLayout _systemLayoutField;
     
-    private stafflayout[] stafflayoutField;
+    private StaffLayout[] _staffLayoutField;
     
     private appearance appearanceField;
     
@@ -18246,34 +14629,34 @@ public partial class defaults {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("page-layout")]
-    public pagelayout pagelayout {
+    public PageLayout PageLayout {
         get {
-            return this.pagelayoutField;
+            return this._pageLayoutField;
         }
         set {
-            this.pagelayoutField = value;
+            this._pageLayoutField = value;
         }
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("system-layout")]
-    public systemlayout systemlayout {
+    public SystemLayout SystemLayout {
         get {
-            return this.systemlayoutField;
+            return this._systemLayoutField;
         }
         set {
-            this.systemlayoutField = value;
+            this._systemLayoutField = value;
         }
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute("staff-layout")]
-    public stafflayout[] stafflayout {
+    public StaffLayout[] StaffLayout {
         get {
-            return this.stafflayoutField;
+            return this._staffLayoutField;
         }
         set {
-            this.stafflayoutField = value;
+            this._staffLayoutField = value;
         }
     }
     
@@ -18397,13 +14780,13 @@ public partial class scorepartwisePartMeasure {
     [System.Xml.Serialization.XmlElementAttribute("barline", typeof(BarLine))]
     [System.Xml.Serialization.XmlElementAttribute("bookmark", typeof(bookmark))]
     [System.Xml.Serialization.XmlElementAttribute("direction", typeof(direction))]
-    [System.Xml.Serialization.XmlElementAttribute("figured-bass", typeof(figuredbass))]
+    [System.Xml.Serialization.XmlElementAttribute("figured-bass", typeof(FiguredBass))]
     [System.Xml.Serialization.XmlElementAttribute("forward", typeof(forward))]
     [System.Xml.Serialization.XmlElementAttribute("grouping", typeof(Grouping))]
-    [System.Xml.Serialization.XmlElementAttribute("harmony", typeof(harmony))]
+    [System.Xml.Serialization.XmlElementAttribute("harmony", typeof(Harmony))]
     [System.Xml.Serialization.XmlElementAttribute("link", typeof(link))]
     [System.Xml.Serialization.XmlElementAttribute("note", typeof(note))]
-    [System.Xml.Serialization.XmlElementAttribute("print", typeof(print))]
+    [System.Xml.Serialization.XmlElementAttribute("print", typeof(Print))]
     [System.Xml.Serialization.XmlElementAttribute("sound", typeof(sound))]
     public object[] Items {
         get {
@@ -18752,13 +15135,13 @@ public partial class scoretimewiseMeasurePart {
     [System.Xml.Serialization.XmlElementAttribute("barline", typeof(BarLine))]
     [System.Xml.Serialization.XmlElementAttribute("bookmark", typeof(bookmark))]
     [System.Xml.Serialization.XmlElementAttribute("direction", typeof(direction))]
-    [System.Xml.Serialization.XmlElementAttribute("figured-bass", typeof(figuredbass))]
+    [System.Xml.Serialization.XmlElementAttribute("figured-bass", typeof(FiguredBass))]
     [System.Xml.Serialization.XmlElementAttribute("forward", typeof(forward))]
     [System.Xml.Serialization.XmlElementAttribute("grouping", typeof(Grouping))]
-    [System.Xml.Serialization.XmlElementAttribute("harmony", typeof(harmony))]
+    [System.Xml.Serialization.XmlElementAttribute("harmony", typeof(Harmony))]
     [System.Xml.Serialization.XmlElementAttribute("link", typeof(link))]
     [System.Xml.Serialization.XmlElementAttribute("note", typeof(note))]
-    [System.Xml.Serialization.XmlElementAttribute("print", typeof(print))]
+    [System.Xml.Serialization.XmlElementAttribute("print", typeof(Print))]
     [System.Xml.Serialization.XmlElementAttribute("sound", typeof(sound))]
     public object[] Items {
         get {
